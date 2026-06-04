@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt – Rogaland Driftsservice AS</title>
+  <meta name="description" content="Kontakt Rogaland Driftsservice AS — ring 48 024 024 eller send oss en melding.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <style>
+    .contact-page { padding:6rem 0 8rem; }
+    .contact-layout { display:grid; grid-template-columns:1fr 1.5fr; gap:6rem; align-items:start; }
+    .contact-title { font-family:var(--font-d); font-size:clamp(2.2rem,4vw,3.4rem); font-weight:700; text-transform:uppercase; color:var(--navy); line-height:.95; margin-bottom:1.5rem; }
+    .contact-intro { font-size:.92rem; line-height:1.8; color:#4B5563; margin-bottom:2.5rem; }
+    .contact-social a { width:40px;height:40px;background:var(--cream);border-radius:var(--r);display:inline-flex;align-items:center;justify-content:center;color:var(--navy);transition:all var(--t);margin-right:.5rem; }
+    .contact-social a:hover { background:var(--navy);color:var(--white); }
+    .maps-link { display:flex; align-items:center; gap:.6rem; font-family:var(--font-h); font-size:.8rem; font-weight:600; color:var(--gold); margin-top:2rem; text-decoration:underline; text-underline-offset:3px; transition:color .25s; }
+    .maps-link:hover { color:var(--navy); }
+    @media(max-width:1024px){.contact-layout{grid-template-columns:1fr;gap:3.5rem}}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar--solid" id="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-logo"><img src="assets/images/1650882374564.jpeg" alt="Rogaland Driftsservice AS"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="tjenester.html">Tjenester</a></li>
+      <li><a href="om-oss.html">Om oss</a></li>
+      <li><a href="hytteservice.html">Hytteservice</a></li>
+      <li><a href="flaggstenger.html">Flaggstenger</a></li>
+      <li><a href="referanser.html">Referanser</a></li>
+      <li><a href="kontakt.html" class="active">Kontakt</a></li>
+    </ul>
+    <a href="kontakt.html" class="nav-cta">Be om tilbud</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Åpne meny" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <button class="nav-close" id="navClose">✕</button>
+  <a href="index.html">Hjem</a><a href="tjenester.html">Tjenester</a><a href="om-oss.html">Om oss</a><a href="hytteservice.html">Hytteservice</a><a href="flaggstenger.html">Flaggstenger</a><a href="referanser.html">Referanser</a><a href="kontakt.html">Kontakt</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg-accent"></div>
+  <div class="container">
+    <div class="label label--light reveal">Kontakt oss</div>
+    <h1 class="page-hero-title reveal">La oss<br><em>snakke<br>sammen</em></h1>
+    <p class="page-hero-desc reveal">Send oss en beskrivelse av jobben du ønsker gjort, så kommer vi tilbake med et tilbud. Finner du ikke svaret — kontakt oss, det er stor sannsynlighet for at vi kan hjelpe.</p>
+  </div>
+</div>
+
+<section class="contact-page" style="background:var(--cream)">
+  <div class="container">
+    <div class="contact-layout">
+      <div>
+        <div class="label reveal">Kontaktinformasjon</div>
+        <h2 class="contact-title reveal">Kom i<br>kontakt</h2>
+        <p class="contact-intro reveal">Vi tar kontakt med deg så fort som mulig etter vi mottar din henvendelse.</p>
+
+        <div class="contact-detail reveal">
+          <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <div><div class="contact-lbl">Telefon</div><div class="contact-val"><a href="tel:48024024">48 024 024</a></div></div>
+        </div>
+        <div class="contact-detail reveal">
+          <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><div class="contact-lbl">E-post</div><div class="contact-val"><a href="mailto:post@rogdrift.no">post@rogdrift.no</a></div></div>
+        </div>
+        <div class="contact-detail reveal">
+          <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <div class="contact-lbl">Adresse</div>
+            <div class="contact-val">Hillevågsveien 100, 4016 Stavanger</div>
+          </div>
+        </div>
+        <div class="contact-detail reveal">
+          <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <div>
+            <div class="contact-lbl">Regnskap / Faktura</div>
+            <div class="contact-val"><a href="tel:40639340">406 39 340</a> · <a href="mailto:fredrik@relevantregnskap.no">fredrik@relevantregnskap.no</a></div>
+          </div>
+        </div>
+
+        <div class="contact-detail reveal">
+          <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div>
+            <div class="contact-lbl">Åpningstider</div>
+            <div class="contact-val">Mandag–Fredag: 08:00–16:00</div>
+          </div>
+        </div>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Hillevågsveien+100+4016+Stavanger" target="_blank" rel="noopener" class="maps-link reveal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Vis oss på Google Maps →
+        </a>
+</div>
+
+      <div class="form-wrap reveal">
+        <div id="formFields">
+          <h3 style="font-family:var(--font-d);font-size:1.6rem;font-weight:700;text-transform:uppercase;color:var(--navy);margin-bottom:1.5rem">Send oss en melding</h3>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label" for="f-name">Navn</label>
+              <input class="form-input" type="text" id="f-name" name="name" placeholder="Ditt navn" autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="f-email">E-post <span class="required">*</span></label>
+              <input class="form-input" type="email" id="f-email" name="email" placeholder="din@epost.no" required autocomplete="email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-phone">Telefon <span class="required">*</span></label>
+            <input class="form-input" type="tel" id="f-phone" name="phone" placeholder="123 45 678" required autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-service">Tjeneste <span class="required">*</span></label>
+            <select class="form-select" id="f-service" name="service" required>
+              <option value="">-- Velg tjeneste --</option>
+              <option value="vaktmester">Vaktmester &amp; Vedlikehold</option>
+              <option value="montering">Montering</option>
+              <option value="prosjektledelse">Prosjektledelse</option>
+              <option value="hytteservice">Hytteservice</option>
+              <option value="flaggstenger">Flaggstenger</option>
+              <option value="annet">Annet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-message">Melding</label>
+            <textarea class="form-textarea" id="f-message" name="message" placeholder="Beskriv jobben du ønsker gjort..."></textarea>
+          </div>
+          <button class="btn btn-primary form-btn" id="submitBtn" onclick="handleSubmit(event)">Be om tilbud</button>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <div class="form-success-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg></div>
+          <h3>Takk for din henvendelse!</h3>
+          <p>Vi tar kontakt med deg så snart som mulig.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Google Maps embed -->
+<div style="width:100%;height:400px">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2040.0!2d5.7455!3d58.9556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463a35b2b98c3b3b%3A0x0!2sHillev%C3%A5gsveien+100%2C+4016+Stavanger!5e0!3m2!1sno!2sno!4v1"
+    width="100%" height="400" style="border:0;display:block" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    title="Kart over Rogaland Driftsservice AS"></iframe>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div><img class="footer-logo" src="assets/images/1650882374564.jpeg" alt="Rogaland Driftsservice AS"><div class="footer-tagline">Vi vedlikeholder Rogaland</div><p class="footer-desc">Et godt rykte skapes av fornøyde kunder, fornøyde kunder skapes gjennom god service og godt utført arbeid. Trygghet for deg som kunde og at oppgaven blir ivaretatt på riktig måte. Avtalt arbeid til avtalt pris og tid.</p></div>
+      <div><div class="footer-nav-title">Tjenester</div><ul class="footer-nav-links"><li><a href="tjenester.html#vaktmester">Vaktmester &amp; Vedlikehold</a></li><li><a href="tjenester.html#montering">Montering</a></li><li><a href="tjenester.html#prosjektledelse">Prosjektledelse</a></li><li><a href="hytteservice.html">Hytteservice</a></li><li><a href="flaggstenger.html">Flaggstenger</a></li></ul></div>
+      <div><div class="footer-nav-title">Selskapet</div><ul class="footer-nav-links"><li><a href="om-oss.html">Om oss</a></li><li><a href="referanser.html">Referanser</a></li><li><a href="kontakt.html">Kontakt</a></li><li><a href="tel:48024024">48 024 024</a></li><li><a href="mailto:post@rogdrift.no">post@rogdrift.no</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© 2026 Rogaland Driftsservice AS · Org.nr. 813 933 632</p><p class="footer-pixora">Laget av <a href="https://rasmusostensen.github.io/Pixora/index.html" target="_blank" rel="noopener">Pixora</a></p></div>
+  </div>
+</footer>
+<script>
+  const lenis = new Lenis({ lerp:0.08 });
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.ticker.add(t => lenis.raf(t*1000));
+  gsap.ticker.lagSmoothing(0);
+  const navToggle = document.getElementById('navToggle');
+  const navMobile = document.getElementById('navMobile');
+  navToggle.addEventListener('click',()=>{navMobile.classList.add('open');navToggle.setAttribute('aria-expanded','true');});
+  document.getElementById('navClose').addEventListener('click',()=>{navMobile.classList.remove('open');navToggle.setAttribute('aria-expanded','false');});
+  navMobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navMobile.classList.remove('open')));
+  document.querySelectorAll('.reveal').forEach(el=>{
+    gsap.fromTo(el,{opacity:0,y:38},{opacity:1,y:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%',toggleActions:'play none none none'}});
+  });
+  function handleSubmit(e) {
+    e.preventDefault();
+    const email=document.getElementById('f-email').value.trim();
+    const phone=document.getElementById('f-phone').value.trim();
+    const service=document.getElementById('f-service').value;
+    if(!email||!phone||!service){
+      if(!email)document.getElementById('f-email').style.borderColor='#DC2626';
+      if(!phone)document.getElementById('f-phone').style.borderColor='#DC2626';
+      if(!service)document.getElementById('f-service').style.borderColor='#DC2626';
+      return;
+    }
+    const btn=document.getElementById('submitBtn');
+    btn.textContent='Sender…'; btn.disabled=true;
+    setTimeout(()=>{document.getElementById('formFields').style.display='none';document.getElementById('formSuccess').style.display='block';},800);
+  }
+  ['f-email','f-phone','f-service'].forEach(id=>{document.getElementById(id)?.addEventListener('input',function(){this.style.borderColor='';});});
+</script>
+</body>
+</html>

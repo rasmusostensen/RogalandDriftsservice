@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Referanser – Rogaland Driftsservice AS</title>
+  <meta name="description" content="Kunder og samarbeidspartnere til Rogaland Driftsservice AS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <style>
+    .ref-page { padding:7rem 0 8rem; background:var(--cream); }
+    .ref-intro { max-width:640px; margin-bottom:4rem; }
+    .ref-grid {
+      display:grid;
+      grid-template-columns:repeat(6,1fr);
+      gap:1px;
+      background:var(--border);
+      border:1px solid var(--border);
+      border-radius:var(--r-lg);
+      overflow:hidden;
+    }
+    .ref-card {
+      background:var(--white);
+      padding:2rem 1.5rem;
+      text-align:center;
+      transition:all var(--t) var(--ease);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      min-height:120px;
+      position:relative;
+      overflow:hidden;
+    }
+    .ref-card::after {
+      content:'';
+      position:absolute;
+      bottom:0;left:0;right:0;
+      height:2px;
+      background:var(--gold);
+      transform:scaleX(0);
+      transform-origin:left;
+      transition:transform .35s var(--ease);
+    }
+    .ref-card:hover { background:var(--navy); transform:translateY(-2px); }
+    .ref-card:hover::after { transform:scaleX(1); }
+    .ref-card:hover h3 { color:var(--white); }
+    .ref-card:hover span { color:rgba(255,255,255,.5); }
+    .ref-card h3 {
+      font-family:var(--font-d);
+      font-size:1.35rem;
+      font-weight:700;
+      text-transform:uppercase;
+      color:var(--navy);
+      letter-spacing:.03em;
+      margin-bottom:.2rem;
+      transition:color var(--t);
+      line-height:1.1;
+    }
+    .ref-card span {
+      font-size:.65rem;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color:var(--muted);
+      transition:color var(--t);
+    }
+    @media(max-width:1200px){.ref-grid{grid-template-columns:repeat(4,1fr)}}
+    @media(max-width:768px){.ref-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:480px){.ref-grid{grid-template-columns:repeat(2,1fr)}}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar--solid" id="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-logo"><img src="assets/images/1650882374564.jpeg" alt="Rogaland Driftsservice AS"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="tjenester.html">Tjenester</a></li>
+      <li><a href="om-oss.html">Om oss</a></li>
+      <li><a href="hytteservice.html">Hytteservice</a></li>
+      <li><a href="flaggstenger.html">Flaggstenger</a></li>
+      <li><a href="referanser.html" class="active">Referanser</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <a href="kontakt.html" class="nav-cta">Be om tilbud</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Åpne meny" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <button class="nav-close" id="navClose">✕</button>
+  <a href="index.html">Hjem</a><a href="tjenester.html">Tjenester</a><a href="om-oss.html">Om oss</a><a href="hytteservice.html">Hytteservice</a><a href="flaggstenger.html">Flaggstenger</a><a href="referanser.html">Referanser</a><a href="kontakt.html">Be om tilbud</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg-accent"></div>
+  <div class="container">
+    <div class="label label--light reveal">Kunder vi er stolte av</div>
+    <h1 class="page-hero-title reveal">Våre<br><em>Referanser</em></h1>
+    <p class="page-hero-desc reveal">Vi er stolte over å ha levert tjenester til en rekke kjente bedrifter og institusjoner i Rogaland — fra små sameier til store offentlige aktører.</p>
+  </div>
+</div>
+
+<!-- Marquee featured -->
+<section class="references">
+  <div class="references-head"><p>Utvalgte kunder</p></div>
+  <div class="marquee-wrap">
+    <div class="marquee-track" aria-hidden="true">
+      <div class="ref-item">
+        <a href="https://www.stavanger.kommune.no/" target="_blank" rel="noopener" class="ref-link">Stavanger Kommune</a><div class="ref-dot"></div>
+        <a href="https://www.elkjop.no/" target="_blank" rel="noopener" class="ref-link">Elkjøp</a><div class="ref-dot"></div>
+        <a href="https://www.bring.no/" target="_blank" rel="noopener" class="ref-link">Bring</a><div class="ref-dot"></div>
+        <a href="https://www.ikea.com/no/" target="_blank" rel="noopener" class="ref-link">IKEA</a><div class="ref-dot"></div>
+        <a href="https://www.notar.no/" target="_blank" rel="noopener" class="ref-link">Notar</a><div class="ref-dot"></div>
+        <span class="ref-link">Randaberg Arena</span><div class="ref-dot"></div>
+        <span class="ref-link">Sandnes Hallen</span><div class="ref-dot"></div>
+        <span class="ref-link">Sørmarka Arena</span><div class="ref-dot"></div>
+      </div>
+      <div class="ref-item">
+        <a href="https://www.stavanger.kommune.no/" target="_blank" rel="noopener" class="ref-link">Stavanger Kommune</a><div class="ref-dot"></div>
+        <a href="https://www.elkjop.no/" target="_blank" rel="noopener" class="ref-link">Elkjøp</a><div class="ref-dot"></div>
+        <a href="https://www.bring.no/" target="_blank" rel="noopener" class="ref-link">Bring</a><div class="ref-dot"></div>
+        <a href="https://www.ikea.com/no/" target="_blank" rel="noopener" class="ref-link">IKEA</a><div class="ref-dot"></div>
+        <a href="https://www.notar.no/" target="_blank" rel="noopener" class="ref-link">Notar</a><div class="ref-dot"></div>
+        <span class="ref-link">Randaberg Arena</span><div class="ref-dot"></div>
+        <span class="ref-link">Sandnes Hallen</span><div class="ref-dot"></div>
+        <span class="ref-link">Sørmarka Arena</span><div class="ref-dot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- All references grid -->
+<section class="ref-page">
+  <div class="container">
+    <div class="ref-intro">
+      <div class="label reveal">Alle referanser</div>
+      <h2 class="section-title reveal">Bedrifter vi<br>har levert til</h2>
+      <p class="section-text reveal">Vi er stolte av hvert samarbeid vi har hatt. Trykk på kortene som har lenke for å besøke deres nettside.</p>
+    </div>
+
+    <div class="ref-grid">
+      <a href="https://www.elkjop.no/" target="_blank" rel="noopener" class="ref-card reveal">
+        <h3>Elkjøp</h3><span>Handel</span>
+      </a>
+      <a href="https://www.eventi.no" target="_blank" rel="noopener" class="ref-card reveal">
+        <h3>Eventi</h3><span>Arrangement</span>
+      </a>
+      <a href="https://www.bring.no/" target="_blank" rel="noopener" class="ref-card reveal">
+        <h3>Bring</h3><span>Logistikk</span>
+      </a>
+      <a href="https://montera.no" target="_blank" rel="noopener" class="ref-card reveal">
+        <h3>Montera</h3><span>Montering</span>
+      </a>
+      <a href="https://www.mylnasport.no" target="_blank" rel="noopener" class="ref-card reveal">
+        <h3>mylna</h3><span>Handel</span>
+      </a>
+      <a href="https://www.qicraft.no/" target="_blank" rel="noopener" class="ref-card reveal">
+        <h3>Qicraft</h3><span>Sport &amp; Fitness</span>
+      </a>
+      <div class="ref-card reveal">
+        <h3>PROA</h3><span>Kontor</span>
+      </div>
+      <a href="https://senabeikeland.no" target="_blank" rel="noopener" class="ref-card reveal">
+        <h3>Senab<br>Eikeland</h3><span>Møbler</span>
+      </a>
+      <a href="https://www.stavanger.kommune.no/" target="_blank" rel="noopener" class="ref-card reveal">
+        <h3>Stavanger<br>Kommune</h3><span>Offentlig sektor</span>
+      </a>
+      <a href="https://varenergiarenarandaberg.no" target="_blank" rel="noopener" class="ref-card reveal">
+        <h3>Randaberg<br>Arena</h3><span>Sport &amp; Fritid</span>
+      </a>
+      <a href="https://varenergiarenasandneshallen.no" target="_blank" rel="noopener" class="ref-card reveal">
+        <h3>Sandnes<br>Hallen</h3><span>Sport &amp; Fritid</span>
+      </a>
+      <a href="https://varenergiarenasormarka.no" target="_blank" rel="noopener" class="ref-card reveal">
+        <h3>Sørmarka<br>Arena</h3><span>Sport &amp; Fritid</span>
+      </a>
+      <a href="https://www.notar.no/" target="_blank" rel="noopener" class="ref-card reveal">
+        <h3>Notar</h3><span>Eiendom</span>
+      </a>
+      <a href="https://www.pobelprosjektet.no" target="_blank" rel="noopener" class="ref-card reveal">
+        <h3>Pøbel<br>Prosjektet</h3><span>Samfunn</span>
+      </a>
+      <a href="https://www.elkjop.no/epoq" target="_blank" rel="noopener" class="ref-card reveal">
+        <h3>Epoq</h3><span>Interiør</span>
+      </a>
+      <div class="ref-card reveal">
+        <h3>Tjelta</h3><span>Bygg</span>
+      </div>
+      <a href="https://www.gym2000.no/" target="_blank" rel="noopener" class="ref-card reveal">
+        <h3>Gym 2000</h3><span>Treningssenter</span>
+      </a>
+      <a href="https://www.ikea.com/no/" target="_blank" rel="noopener" class="ref-card reveal">
+        <h3>IKEA</h3><span>Handel</span>
+      </a>
+    </div>
+
+    <div style="text-align:center;margin-top:4rem" class="reveal">
+      <p style="font-size:.9rem;color:var(--muted);margin-bottom:1.5rem">Er du klar for å bli vår neste fornøyde kunde?</p>
+      <a href="kontakt.html" class="btn btn-primary">Be om tilbud</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <img class="footer-logo" src="assets/images/1650882374564.jpeg" alt="Rogaland Driftsservice AS">
+        <div class="footer-tagline">Vi vedlikeholder Rogaland</div>
+        <p class="footer-desc">Et godt rykte skapes av fornøyde kunder, fornøyde kunder skapes gjennom god service og godt utført arbeid. Trygghet for deg som kunde og at oppgaven blir ivaretatt på riktig måte. Avtalt arbeid til avtalt pris og tid.</p>
+      </div>
+      <div><div class="footer-nav-title">Tjenester</div><ul class="footer-nav-links"><li><a href="tjenester.html#vaktmester">Vaktmester &amp; Vedlikehold</a></li><li><a href="tjenester.html#montering">Montering</a></li><li><a href="tjenester.html#prosjektledelse">Prosjektledelse</a></li><li><a href="hytteservice.html">Hytteservice</a></li><li><a href="flaggstenger.html">Flaggstenger</a></li></ul></div>
+      <div><div class="footer-nav-title">Selskapet</div><ul class="footer-nav-links"><li><a href="om-oss.html">Om oss</a></li><li><a href="referanser.html">Referanser</a></li><li><a href="kontakt.html">Kontakt</a></li><li><a href="tel:48024024">48 024 024</a></li><li><a href="mailto:post@rogdrift.no">post@rogdrift.no</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© 2026 Rogaland Driftsservice AS · Org.nr. 813 933 632</p><p class="footer-pixora">Laget av <a href="https://rasmusostensen.github.io/Pixora/index.html" target="_blank" rel="noopener">Pixora</a></p></div>
+  </div>
+</footer>
+<script>
+  const lenis = new Lenis({ lerp:0.08 });
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.ticker.add(t => lenis.raf(t*1000));
+  gsap.ticker.lagSmoothing(0);
+  const navToggle = document.getElementById('navToggle');
+  const navMobile = document.getElementById('navMobile');
+  navToggle.addEventListener('click',()=>{navMobile.classList.add('open');navToggle.setAttribute('aria-expanded','true');});
+  document.getElementById('navClose').addEventListener('click',()=>{navMobile.classList.remove('open');navToggle.setAttribute('aria-expanded','false');});
+  navMobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navMobile.classList.remove('open')));
+  document.querySelectorAll('.reveal').forEach(el=>{
+    gsap.fromTo(el,{opacity:0,y:38},{opacity:1,y:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%',toggleActions:'play none none none'}});
+  });
+</script>
+</body>
+</html>

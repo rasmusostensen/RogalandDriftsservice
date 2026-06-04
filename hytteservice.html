@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hytteservice – Rogaland Driftsservice AS</title>
+  <meta name="description" content="Din trygghet som hytteeier — tilsyn, vedlikehold, klargjøring og vaktordning i Rogaland.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <style>
+    .hytte-hero { position:relative; min-height:65vh; display:flex; align-items:flex-end; overflow:hidden; padding-bottom:5rem; }
+    .hytte-hero-bg { position:absolute;inset:0; background-image:url('assets/images/60345195_2348689675151733_4856986792001273856_n.jpg'); background-size:cover; background-position:center; }
+    .hytte-hero-overlay { position:absolute;inset:0; background:linear-gradient(to top,rgba(13,27,46,.95) 0%,rgba(13,27,46,.5) 60%,rgba(13,27,46,.2) 100%); }
+    .hytte-hero-content { position:relative;z-index:2; }
+    .hytte-img-tag { display:inline-block; background:var(--gold); color:var(--white); padding:.6rem 1.25rem; border-radius:var(--r); font-family:var(--font-h); font-size:.75rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; margin-bottom:1.25rem; }
+    .service-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:3rem; }
+    .service-mini { background:var(--white); padding:2rem 1.75rem; border-radius:var(--r); border:1.5px solid var(--border); transition:border-color var(--t),transform var(--t); }
+    .service-mini:hover { border-color:var(--gold); transform:translateY(-3px); }
+    .service-mini h4 { font-family:var(--font-h); font-size:.95rem; font-weight:700; color:var(--navy); margin-bottom:.6rem; }
+    .service-mini p { font-size:.84rem; line-height:1.7; color:var(--muted); }
+    @media(max-width:768px){.service-cards{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar" style="background:rgba(13,27,46,.6);backdrop-filter:blur(12px)">
+  <div class="container">
+    <a href="index.html" class="navbar-logo"><img src="assets/images/1650882374564.jpeg" alt="Rogaland Driftsservice AS"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="tjenester.html">Tjenester</a></li>
+      <li><a href="om-oss.html">Om oss</a></li>
+      <li><a href="hytteservice.html" class="active">Hytteservice</a></li>
+      <li><a href="flaggstenger.html">Flaggstenger</a></li>
+      <li><a href="referanser.html">Referanser</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <a href="kontakt.html" class="nav-cta">Be om tilbud</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Åpne meny" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <button class="nav-close" id="navClose">✕</button>
+  <a href="index.html">Hjem</a><a href="tjenester.html">Tjenester</a><a href="om-oss.html">Om oss</a><a href="hytteservice.html">Hytteservice</a><a href="flaggstenger.html">Flaggstenger</a><a href="referanser.html">Referanser</a><a href="kontakt.html">Be om tilbud</a>
+</div>
+
+<div class="hytte-hero">
+  <div class="hytte-hero-bg" id="hytteBg"></div>
+  <div class="hytte-hero-overlay"></div>
+  <div class="container hytte-hero-content">
+    <span class="hytte-img-tag">Tjeneste 04</span>
+    <h1 class="page-hero-title reveal" style="font-size:clamp(3rem,7vw,6rem)">Hytte&shy;service<br>på dine<br><em>premisser</em></h1>
+    <p class="page-hero-desc reveal">Din trygghet som hytteeier er vår absolutte prioritet. Vi sørger for at eiendommen din er i kompetente hender og at vi tar ansvar.</p>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<section style="padding:7rem 0;background:var(--cream)">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <div class="label reveal">Hva vi tilbyr</div>
+        <h2 class="section-title reveal">Alt du trenger<br>til hytta</h2>
+        <p class="section-text reveal">Felles for alle oppgaver og tjenester Rogaland Driftsservice AS leverer, er at vi skal bidra til at du som hytteeier skal kunne nyte feriedagene maksimalt – fra du kommer til du drar. Din trygghet som hytteeier er vår absolutte prioritet, du skal være trygg på at eiendommen din er i kompetente hender og at vi tar ansvar.</p>
+        <p class="section-text reveal">Ta kontakt for et uforpliktende tilbud. Ved flere eiendommer i samme område vil vi kunne tilby bedre priser.</p>
+
+        <div class="label reveal" style="margin-top:2.5rem">Vi tilbyr deg som hytteeier</div>
+        <ul class="check-list reveal">
+          <li>Vaktmestertjenester</li>
+          <li>Tilsyn av eiendommen din utenom sesong. Vi ser etter at alt er i orden — som varme, vann, strøm etc. Vi dokumenterer og sender deg oppdateringer ved hvert besøk.</li>
+          <li>Rundvask før innflytting eller utvasking etter utleie</li>
+          <li>Sjekk av eiendommen og klargjøring før/etter utleie</li>
+          <li>Avlesing av strøm og vannmåler</li>
+          <li>Vedlikehold av Torvtak (kalking, gjødsling og klipping)</li>
+          <li>Beising/maling av terrasse, vinduer eller hytte</li>
+          <li>Vi leverer på hytta. Innkjøp av mat, drikke, etc. Dette kan stå klart i kjøleskapet eller på trappa når du kommer.</li>
+          <li>Vi klargjør også for ankomst. Bare gi beskjed, så gjør vi hytta klar til du kommer.</li>
+          <li>Vaktordning. Dette gir deg en ekstra trygghet ved kraftig uvær eller plutselige væromslag med kuldegrader o.l.</li>
+        </ul>
+        <a href="kontakt.html" class="btn btn-primary reveal">Be om uforpliktende tilbud</a>
+      </div>
+      <div style="position:relative" class="reveal">
+        <img src="assets/images/60345195_2348689675151733_4856986792001273856_n.jpg" alt="Hytteservice i Rogaland" style="width:100%;height:600px;object-fit:cover;border-radius:var(--r)" loading="lazy">
+        <div style="position:absolute;bottom:2rem;left:-1.5rem;background:var(--navy);color:var(--white);padding:1.25rem 1.75rem;border-radius:var(--r);box-shadow:0 12px 40px rgba(13,27,46,.3)">
+          <strong style="font-family:var(--font-d);font-size:1.1rem;font-weight:700;display:block;margin-bottom:.2rem">Uforpliktende tilbud</strong>
+          <span style="font-size:.72rem;color:var(--gold-lt);letter-spacing:.15em;text-transform:uppercase">Ta kontakt i dag</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-cards" style="margin-top:5rem">
+      <div class="service-mini reveal">
+        <h4>Tilsyn &amp; vedlikehold</h4>
+        <p>Regelmessig tilsyn med dokumentasjon. Vi sjekker at alt er som det skal — varme, vann, strøm og generell tilstand.</p>
+      </div>
+      <div class="service-mini reveal">
+        <h4>Rengjøring &amp; klargjøring</h4>
+        <p>Rundvask, innflytningsvask og klargjøring av hytta til din ankomst — slik at du kan slappe av fra første stund.</p>
+      </div>
+      <div class="service-mini reveal">
+        <h4>Innkjøp &amp; leveranser</h4>
+        <p>Vi handler og leverer mat, drikke og utstyr. Alt kan stå klart på hytta når du ankommer.</p>
+      </div>
+      <div class="service-mini reveal">
+        <h4>Utendørs vedlikehold</h4>
+        <p>Vedlikehold av torvtak, beising og maling av terrasse og fasade. Vi holder hytta pen og ivaretatt.</p>
+      </div>
+      <div class="service-mini reveal">
+        <h4>Vaktordning</h4>
+        <p>Ekstra trygghet ved kraftig uvær, kuldegrader og uforutsette hendelser — vi er tilgjengelige for deg.</p>
+      </div>
+      <div class="service-mini reveal">
+        <h4>Måleravlesning</h4>
+        <p>Avlesing av strøm- og vannmåler med dokumentasjon og rapportering direkte til deg.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div><img class="footer-logo" src="assets/images/1650882374564.jpeg" alt="Rogaland Driftsservice AS"><div class="footer-tagline">Vi vedlikeholder Rogaland</div><p class="footer-desc">Et godt rykte skapes av fornøyde kunder, fornøyde kunder skapes gjennom god service og godt utført arbeid. Trygghet for deg som kunde og at oppgaven blir ivaretatt på riktig måte. Avtalt arbeid til avtalt pris og tid.</p></div>
+      <div><div class="footer-nav-title">Tjenester</div><ul class="footer-nav-links"><li><a href="tjenester.html#vaktmester">Vaktmester &amp; Vedlikehold</a></li><li><a href="tjenester.html#montering">Montering</a></li><li><a href="tjenester.html#prosjektledelse">Prosjektledelse</a></li><li><a href="hytteservice.html">Hytteservice</a></li><li><a href="flaggstenger.html">Flaggstenger</a></li></ul></div>
+      <div><div class="footer-nav-title">Selskapet</div><ul class="footer-nav-links"><li><a href="om-oss.html">Om oss</a></li><li><a href="referanser.html">Referanser</a></li><li><a href="kontakt.html">Kontakt</a></li><li><a href="tel:48024024">48 024 024</a></li><li><a href="mailto:post@rogdrift.no">post@rogdrift.no</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© 2026 Rogaland Driftsservice AS · Org.nr. 813 933 632</p><p class="footer-pixora">Laget av <a href="https://rasmusostensen.github.io/Pixora/index.html" target="_blank" rel="noopener">Pixora</a></p></div>
+  </div>
+</footer>
+<script>
+  const lenis = new Lenis({ lerp:0.08 });
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.ticker.add(t => lenis.raf(t*1000));
+  gsap.ticker.lagSmoothing(0);
+  window.addEventListener('scroll',()=>{document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>60);},{passive:true});
+  const navToggle = document.getElementById('navToggle');
+  const navMobile = document.getElementById('navMobile');
+  navToggle.addEventListener('click',()=>{navMobile.classList.add('open');navToggle.setAttribute('aria-expanded','true');});
+  document.getElementById('navClose').addEventListener('click',()=>{navMobile.classList.remove('open');navToggle.setAttribute('aria-expanded','false');});
+  navMobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navMobile.classList.remove('open')));
+  gsap.to('#hytteBg',{yPercent:18,ease:'none',scrollTrigger:{trigger:'.hytte-hero',start:'top top',end:'bottom top',scrub:true}});
+  document.querySelectorAll('.reveal').forEach(el=>{
+    gsap.fromTo(el,{opacity:0,y:38},{opacity:1,y:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%',toggleActions:'play none none none'}});
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flaggstenger – Rogaland Driftsservice AS</title>
+  <meta name="description" content="Flaggstenger ferdig montert i Stavanger/Sandnes og Jærområdet. Glassfiber, 6–12 meter.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <style>
+    .spec-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; margin-bottom:2.5rem; }
+    .spec-card { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1); padding:1.5rem; border-radius:var(--r); }
+    .spec-card h4 { font-family:var(--font-h); font-size:.75rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-lt); margin-bottom:.5rem; }
+    .spec-card p { font-size:.9rem; color:rgba(255,255,255,.65); line-height:1.6; }
+    .flagg-img { width:100%; height:680px; object-fit:cover; object-position:center; border-radius:var(--r); opacity:.88; }
+    @media(max-width:768px){.spec-grid{grid-template-columns:1fr}.flagg-img{height:420px}}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar--solid" id="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-logo"><img src="assets/images/1650882374564.jpeg" alt="Rogaland Driftsservice AS"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="tjenester.html">Tjenester</a></li>
+      <li><a href="om-oss.html">Om oss</a></li>
+      <li><a href="hytteservice.html">Hytteservice</a></li>
+      <li><a href="flaggstenger.html" class="active">Flaggstenger</a></li>
+      <li><a href="referanser.html">Referanser</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <a href="kontakt.html" class="nav-cta">Be om tilbud</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Åpne meny" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <button class="nav-close" id="navClose">✕</button>
+  <a href="index.html">Hjem</a><a href="tjenester.html">Tjenester</a><a href="om-oss.html">Om oss</a><a href="hytteservice.html">Hytteservice</a><a href="flaggstenger.html">Flaggstenger</a><a href="referanser.html">Referanser</a><a href="kontakt.html">Be om tilbud</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg-accent"></div>
+  <div class="container">
+    <div class="label label--light reveal">Partnerprodukt</div>
+    <h1 class="page-hero-title reveal">Flagg&shy;stenger<br>levert &amp;<br><em>montert</em></h1>
+    <p class="page-hero-desc reveal">Ferdig montert i Stavanger, Sandnes og Jærområdet — trygge flaggstenger i glassfiber med høy kvalitet og meget konkurransedyktige priser.</p>
+  </div>
+</div>
+
+<section style="padding:7rem 0;background:var(--navy);position:relative;overflow:hidden">
+  <div style="position:absolute;top:-30%;right:-8%;width:500px;height:500px;background:radial-gradient(circle,rgba(200,146,42,.07),transparent 70%);pointer-events:none"></div>
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <div class="label label--light reveal">Om tjenesten</div>
+        <h2 class="section-title section-title--light reveal">Flaggstenger<br>fra<br>Flaggstang&shy;fabrikken</h2>
+        <p class="section-text section-text--light reveal">Rogaland Driftsservice er samarbeidspartner på levering og montering av flaggstenger fra Flaggstangsfabrikken AS.</p>
+        <p class="section-text section-text--light reveal">Dette er trygge flaggstenger i glassfiber med høy kvalitet og meget konkurransedyktige priser utviklet for nordiske forhold.</p>
+        <p class="section-text section-text--light reveal">For å lese mer om de ulike flaggstengene og tilbehør fra Flaggstangsfabrikken, trykk på lenken under.</p>
+
+        <div class="spec-grid reveal">
+          <div class="spec-card">
+            <h4>Lengde</h4>
+            <p>Vi har flaggstenger fra 6 til 12 meter på lager.</p>
+          </div>
+          <div class="spec-card">
+            <h4>Materiale</h4>
+            <p>Glassfiber — robust og tilpasset nordiske klimaforhold.</p>
+          </div>
+          <div class="spec-card">
+            <h4>Område</h4>
+            <p>Ferdig montert i Stavanger, Sandnes og Jærområdet.</p>
+          </div>
+          <div class="spec-card">
+            <h4>Produsent</h4>
+            <p>Flaggstangsfabrikken AS — høy kvalitet og konkurransedyktige priser.</p>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:1rem;flex-wrap:wrap" class="reveal">
+          <a href="https://www.flaggstangsfabrikken.no/" target="_blank" rel="noopener" class="btn btn-primary">Besøk flaggstangsfabrikken.no</a>
+          <a href="kontakt.html" class="btn btn-outline">Be om tilbud</a>
+        </div>
+      </div>
+      <div class="reveal">
+        <img class="flagg-img" src="assets/images/w750h1000.jpg" alt="Flaggstang montert av Rogaland Driftsservice" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div><img class="footer-logo" src="assets/images/1650882374564.jpeg" alt="Rogaland Driftsservice AS"><div class="footer-tagline">Vi vedlikeholder Rogaland</div><p class="footer-desc">Et godt rykte skapes av fornøyde kunder, fornøyde kunder skapes gjennom god service og godt utført arbeid. Trygghet for deg som kunde og at oppgaven blir ivaretatt på riktig måte. Avtalt arbeid til avtalt pris og tid.</p></div>
+      <div><div class="footer-nav-title">Tjenester</div><ul class="footer-nav-links"><li><a href="tjenester.html#vaktmester">Vaktmester &amp; Vedlikehold</a></li><li><a href="tjenester.html#montering">Montering</a></li><li><a href="tjenester.html#prosjektledelse">Prosjektledelse</a></li><li><a href="hytteservice.html">Hytteservice</a></li><li><a href="flaggstenger.html">Flaggstenger</a></li></ul></div>
+      <div><div class="footer-nav-title">Selskapet</div><ul class="footer-nav-links"><li><a href="om-oss.html">Om oss</a></li><li><a href="referanser.html">Referanser</a></li><li><a href="kontakt.html">Kontakt</a></li><li><a href="tel:48024024">48 024 024</a></li><li><a href="mailto:post@rogdrift.no">post@rogdrift.no</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© 2026 Rogaland Driftsservice AS · Org.nr. 813 933 632</p><p class="footer-pixora">Laget av <a href="https://rasmusostensen.github.io/Pixora/index.html" target="_blank" rel="noopener">Pixora</a></p></div>
+  </div>
+</footer>
+<script>
+  const lenis = new Lenis({ lerp:0.08 });
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.ticker.add(t => lenis.raf(t*1000));
+  gsap.ticker.lagSmoothing(0);
+  const navToggle = document.getElementById('navToggle');
+  const navMobile = document.getElementById('navMobile');
+  navToggle.addEventListener('click',()=>{navMobile.classList.add('open');navToggle.setAttribute('aria-expanded','true');});
+  document.getElementById('navClose').addEventListener('click',()=>{navMobile.classList.remove('open');navToggle.setAttribute('aria-expanded','false');});
+  navMobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navMobile.classList.remove('open')));
+  document.querySelectorAll('.reveal').forEach(el=>{
+    gsap.fromTo(el,{opacity:0,y:38},{opacity:1,y:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%',toggleActions:'play none none none'}});
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Om oss – Rogaland Driftsservice AS</title>
+  <meta name="description" content="Lær mer om Rogaland Driftsservice AS — hvem vi er, hva vi tror om gode samarbeid, og hva vi kan tilby deg.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <style>
+    .about-sec { padding:7rem 0; }
+    .about-sec:nth-child(even){background:var(--cream);}
+    .about-sec:nth-child(odd){background:var(--white);}
+    .about-img { width:100%; height:500px; object-fit:cover; border-radius:var(--r); }
+    .info-box { background:var(--navy); color:var(--white); padding:2.5rem; border-radius:var(--r-lg); margin-top:2rem; }
+    .info-box h3 { font-family:var(--font-d); font-size:1.5rem; font-weight:700; text-transform:uppercase; margin-bottom:1rem; color:var(--gold-lt); }
+    .info-box p { font-size:.9rem; line-height:1.8; color:rgba(255,255,255,.65); margin-bottom:.75rem; }
+    .info-box p:last-child { margin-bottom:0; }
+    .visste-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; margin-top:2rem; }
+    .visste-card { background:var(--gold-pale); border-left:3px solid var(--gold); padding:1.5rem; border-radius:var(--r); }
+    .visste-card h4 { font-family:var(--font-h); font-size:.85rem; font-weight:700; color:var(--navy); margin-bottom:.5rem; }
+    .visste-card p { font-size:.85rem; line-height:1.7; color:#374151; }
+    .phone-bar { background:var(--gold); color:var(--white); text-align:center; padding:1.25rem; font-family:var(--font-d); font-size:1.4rem; font-weight:700; letter-spacing:.05em; }
+    .phone-bar a { color:inherit; }
+    @media(max-width:768px){.visste-grid{grid-template-columns:1fr}.about-img{height:320px}}
+  </style>
+</head>
+<body>
+<div class="phone-bar"><a href="tel:48024024">RING OSS PÅ: 48 024 024</a></div>
+
+<nav class="navbar navbar--solid" id="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-logo"><img src="assets/images/1650882374564.jpeg" alt="Rogaland Driftsservice AS"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="tjenester.html">Tjenester</a></li>
+      <li><a href="om-oss.html" class="active">Om oss</a></li>
+      <li><a href="hytteservice.html">Hytteservice</a></li>
+      <li><a href="flaggstenger.html">Flaggstenger</a></li>
+      <li><a href="referanser.html">Referanser</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <a href="kontakt.html" class="nav-cta">Be om tilbud</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Åpne meny" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <button class="nav-close" id="navClose">✕</button>
+  <a href="index.html">Hjem</a><a href="tjenester.html">Tjenester</a><a href="om-oss.html">Om oss</a><a href="hytteservice.html">Hytteservice</a><a href="flaggstenger.html">Flaggstenger</a><a href="referanser.html">Referanser</a><a href="kontakt.html">Be om tilbud</a>
+</div>
+
+<div class="page-hero" style="padding-top:8rem">
+  <div class="page-hero-bg-accent"></div>
+  <div class="container">
+    <div class="label label--light reveal">Selskapet</div>
+    <h1 class="page-hero-title reveal">Om<br><em>Rogaland<br>Driftsservice</em></h1>
+  </div>
+</div>
+
+<!-- HVem er vi -->
+<section class="about-sec">
+  <div class="container">
+    <div class="two-col">
+      <div class="img-stack reveal" style="position:relative">
+        <img class="img-stack-main" src="assets/images/44983296_2048445615176142_284794294940729344_n.jpg" alt="Rogaland Driftsservice team" loading="lazy">
+        <img class="img-stack-accent" src="assets/images/vaktmester.jpeg" alt="Fagfolk på jobb" loading="lazy">
+      </div>
+      <div>
+        <div class="label reveal">Hvem er vi?</div>
+        <h2 class="section-title reveal">Gjensidig tillit<br>i alle ledd</h2>
+        <p class="section-text reveal">Vi har lært at gjensidig tillit er en viktig del av alle samarbeid. Derfor vil vi at du skal vite litt om oss før vi begynner et samarbeid.</p>
+        <p class="section-text reveal">Samarbeid og gode relasjoner er noe vi strekker oss etter i alle ledd. Vi lover derfor å sette realistiske forventninger i henhold til pris, kvalitet og leveranse. Vi jobber aktivt for at du som kunde skal ha regelmessige oppdateringer og løpende kommunikasjon gjennom hele prosessen. En part å forholde seg til gjennom hele ditt prosjekt.</p>
+        <p class="section-text reveal">Takket være dyktige samarbeidspartnere og godt forhold til våre leverandører, besitter vi mye god kompetanse, som igjen kommer deg til gode. Vi har ved flere anledninger levert løsninger som gjerne er utradisjonelle og formet etter kundens ønsker, alt i henhold til lover og forskrifter.</p>
+        <p class="section-text reveal">Med flere års erfaring vet du som kunde at vi har det som trengs for å få jobben gjort på en god og forsvarlig måte. Vi har erfaringen som forventes, samtidig som vi bruker de nyeste teknikker og utstyr som er tilgjengelig. Det betyr at vi kan finne smarte løsninger som løser de fleste behov du måtte ha. Målet er å få jobben gjort på den beste måten, mest mulig effektivt og med ditt budsjett i tankene.</p>
+        <div class="blockquote reveal">
+          <p>"Vi leverer fagkompetanse i alle ledd — fra befaring til levering, med yrkesstolthet og kvalitet du kan stole på."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hvem er du -->
+<section class="about-sec">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <div class="label reveal">Hvem er du?</div>
+        <h2 class="section-title reveal">Vi vet hvem<br>du er</h2>
+        <p class="section-text reveal">Alle kunder er ulike, og alle samarbeid er forskjellige. Vi prøver derfor å si litt om hva vi tror er grunnen til at du ønsker å kontakte oss.</p>
+        <p class="section-text reveal">Vi tror du er en person eller bedrift som ønsker god service, kvalitet til en korrekt pris, ryddige og ordnede forhold. Du er en som jakter på den beste samarbeidspartneren til å ta seg av oppgaven. Noen du kan være trygg på ordner opp og leverer kvalitet over tid.</p>
+        <p class="section-text reveal">Vi kjenner bransjen, og vi tror derfor at du kan ha hørt om eller vært borte i andre leverandører som ikke har levert, enten på kvalitet, tid eller pris. Men det kan også være at du er helt ny når det kommer til å betale for tjenester og at du vil være sikker på at du gjør et godt valg.</p>
+        <p class="section-text reveal">Vi tror at du kommer til å være fornøyd med å velge Rogaland Driftsservice.</p>
+        <a href="kontakt.html" class="btn btn-primary reveal">Ta kontakt nå</a>
+      </div>
+      <div style="position:relative" class="reveal">
+        <img class="about-img" src="assets/images/prosjektleder.jpeg" alt="Samarbeid med kunder" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Visste du at -->
+<section class="about-sec">
+  <div class="container">
+    <div class="label reveal">Visste du at?</div>
+    <h2 class="section-title reveal" style="max-width:600px">Vi tilbyr langt mer<br>enn du kanskje tror</h2>
+    <p class="section-text reveal" style="max-width:640px">Vi tilbyr alt fra større prosjekter innen det offentlige eller næringsliv til mindre jobber til det private markedet.</p>
+
+    <div class="visste-grid reveal">
+      <div class="visste-card">
+        <h4>Fagkompetanse i alle ledd</h4>
+        <p>Trenger du tømrer, elektriker, rørlegger, blikkenslager eller annen kompetanse? I tillegg til eget personell kjøper vi timer fra flere sertifiserte samarbeidspartnere — dette gir deg tilgang til fagfolk til betraktelig mye rimeligere kostnad enn du selv oppnår på egenhånd.</p>
+      </div>
+      <div class="visste-card">
+        <h4>Dokumentert kvalitet</h4>
+        <p>Alle våre samarbeidspartnere har papirene og kompetansen på plass. Det dokumenteres gjennom arbeidet vi leverer fra oss hver dag. Hvorfor betale mer enn det du trenger? Vi leverer fagkompetanse, i alle ledd!</p>
+      </div>
+      <div class="visste-card">
+        <h4>Stort og smått</h4>
+        <p>Vårt tjenestespekter sprer seg i det store og det små. Vi tar på oss alt fra mindre prosjekter for private til store prosjekter og løpende arbeid for bedrifter og det offentlige.</p>
+      </div>
+      <div class="visste-card">
+        <h4>Finner du ikke det du leter etter?</h4>
+        <p>Kontakt oss — det er stor sannsynlighet for at vi kan hjelpe deg allikevel. Vi er fleksible og løsningsorienterte.</p>
+      </div>
+    </div>
+
+    <div class="info-box reveal">
+      <h3>Generelle henvendelser</h3>
+      <p><strong><a href="tel:48024024" style="color:var(--gold-lt)">48 024 024</a></strong></p>
+      <p><strong><a href="mailto:post@rogdrift.no" style="color:var(--gold-lt)">post@rogdrift.no</a></strong></p>
+      <br>
+      <h3>Regnskap / Faktura</h3>
+      <p><strong><a href="tel:40639340" style="color:var(--gold-lt)">406 39 340</a></strong></p>
+      <p><strong><a href="mailto:fredrik@relevantregnskap.no" style="color:var(--gold-lt)">fredrik@relevantregnskap.no</a></strong></p>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div><img class="footer-logo" src="assets/images/1650882374564.jpeg" alt="Rogaland Driftsservice AS"><div class="footer-tagline">Vi vedlikeholder Rogaland</div><p class="footer-desc">Et godt rykte skapes av fornøyde kunder, fornøyde kunder skapes gjennom god service og godt utført arbeid. Trygghet for deg som kunde og at oppgaven blir ivaretatt på riktig måte. Avtalt arbeid til avtalt pris og tid.</p></div>
+      <div><div class="footer-nav-title">Tjenester</div><ul class="footer-nav-links"><li><a href="tjenester.html#vaktmester">Vaktmester &amp; Vedlikehold</a></li><li><a href="tjenester.html#montering">Montering</a></li><li><a href="tjenester.html#prosjektledelse">Prosjektledelse</a></li><li><a href="hytteservice.html">Hytteservice</a></li><li><a href="flaggstenger.html">Flaggstenger</a></li></ul></div>
+      <div><div class="footer-nav-title">Selskapet</div><ul class="footer-nav-links"><li><a href="om-oss.html">Om oss</a></li><li><a href="referanser.html">Referanser</a></li><li><a href="kontakt.html">Kontakt</a></li><li><a href="tel:48024024">48 024 024</a></li><li><a href="mailto:post@rogdrift.no">post@rogdrift.no</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© 2026 Rogaland Driftsservice AS · Org.nr. 813 933 632</p><p class="footer-pixora">Laget av <a href="https://rasmusostensen.github.io/Pixora/index.html" target="_blank" rel="noopener">Pixora</a></p></div>
+  </div>
+</footer>
+<script>
+  const lenis = new Lenis({ lerp:0.08 });
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.ticker.add(t => lenis.raf(t*1000));
+  gsap.ticker.lagSmoothing(0);
+  const navToggle = document.getElementById('navToggle');
+  const navMobile = document.getElementById('navMobile');
+  navToggle.addEventListener('click',()=>{navMobile.classList.add('open');navToggle.setAttribute('aria-expanded','true');});
+  document.getElementById('navClose').addEventListener('click',()=>{navMobile.classList.remove('open');navToggle.setAttribute('aria-expanded','false');});
+  navMobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navMobile.classList.remove('open')));
+  document.querySelectorAll('.reveal').forEach(el=>{
+    gsap.fromTo(el,{opacity:0,y:38},{opacity:1,y:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%',toggleActions:'play none none none'}});
+  });
+</script>
+</body>
+</html>

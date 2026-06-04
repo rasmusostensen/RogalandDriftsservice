@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tjenester – Rogaland Driftsservice AS</title>
+  <meta name="description" content="Vaktmester, vedlikehold, montering og prosjektledelse i Stavanger og Rogaland.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <style>
+    .svc-section { padding: 7rem 0; }
+    .svc-section:nth-child(even) { background: var(--cream); }
+    .svc-section:nth-child(odd) { background: var(--white); }
+    .svc-img { width:100%; height:540px; object-fit:cover; border-radius:var(--r); }
+    .svc-img-tag { position:absolute; bottom:2rem; left:-1.5rem; background:var(--navy); color:var(--white); padding:1.1rem 1.5rem; border-radius:var(--r); box-shadow:0 12px 40px rgba(13,27,46,.25); }
+    .svc-img-tag strong { font-family:var(--font-d); font-size:1rem; font-weight:700; display:block; margin-bottom:.2rem; }
+    .svc-img-tag span { font-size:.7rem; color:var(--gold-lt); letter-spacing:.15em; text-transform:uppercase; }
+    @media(max-width:768px){.svc-img{height:320px}.svc-img-tag{display:none}}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar--solid" id="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-logo"><img src="assets/images/1650882374564.jpeg" alt="Rogaland Driftsservice AS"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="tjenester.html" class="active">Tjenester</a></li>
+      <li><a href="om-oss.html">Om oss</a></li>
+      <li><a href="hytteservice.html">Hytteservice</a></li>
+      <li><a href="flaggstenger.html">Flaggstenger</a></li>
+      <li><a href="referanser.html">Referanser</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <a href="kontakt.html" class="nav-cta">Be om tilbud</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Åpne meny" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <button class="nav-close" id="navClose">✕</button>
+  <a href="index.html">Hjem</a><a href="tjenester.html">Tjenester</a><a href="om-oss.html">Om oss</a><a href="hytteservice.html">Hytteservice</a><a href="flaggstenger.html">Flaggstenger</a><a href="referanser.html">Referanser</a><a href="kontakt.html">Be om tilbud</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg-accent"></div>
+  <div class="container">
+    <div class="label label--light reveal">Hva kan vi hjelpe deg med</div>
+    <h1 class="page-hero-title reveal">Våre<br><em>Tjenester</em></h1>
+    <p class="page-hero-desc reveal">Vårt tjenestetilbud sprer seg i stort og smått. Vi har stor yrkesstolthet og leverer derfor kun det vi kan garantere at vi kan stå inne for, fra befaring til levering.</p>
+  </div>
+</div>
+
+<!-- 01 VAKTMESTER -->
+<section class="svc-section" id="vaktmester">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <div class="label reveal">Tjeneste 01</div>
+        <h2 class="section-title reveal">Vaktmester &amp;<br>Vedlikehold</h2>
+        <p class="section-text reveal">Effektive vedlikeholdstjenester er viktige for å holde kostnadene nede. Vi i Rogaland Driftsservice AS anser at effektivitet er å utføre oppgaver med kompetent personell, på en sikker måte og i henhold til avtale.</p>
+        <p class="section-text reveal">Basert på vår ekspertise og lange erfaring har vi en god forutsetning til å forstå behovene og tilby konstruktive og konkurransedyktige løsninger for vedlikehold til ditt hjem, borettslag eller bedrift. Vi har kunder innenfor de fleste segment, alt fra små sameier til større bedrifter og offentlige institusjoner.</p>
+        <p class="section-text reveal">Våre vaktmestere har øynene med seg når de er ute og melder fra til deg som kunde om de ser noe de mener burde vært gjort, men som faller utenfor avtalen. Du vil få løpende vurderinger av eiendommens tilstand og forslag til utbedringer, sammen med anslått kostnad.</p>
+        <p class="section-text reveal">Velger du Rogaland Driftsservice AS kan du være trygg på at dine verdier blir ivaretatt av rett personell. Det skal være en ekstra verdi og trygghet for deg å velge Rogaland Driftsservice AS.</p>
+        <a href="kontakt.html" class="btn btn-primary reveal">Be om tilbud</a>
+      </div>
+      <div style="position:relative" class="reveal">
+        <img class="svc-img" src="assets/images/vaktmester.jpeg" alt="Vaktmester og vedlikehold">
+        <div class="svc-img-tag"><strong>Løpende avtaler</strong><span>Tilpasset dine behov</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 MONTERING -->
+<section class="svc-section" id="montering">
+  <div class="container">
+    <div class="two-col">
+      <div style="position:relative" class="reveal">
+        <img class="svc-img" src="assets/images/montering.jpeg" alt="Monteringstjenester">
+        <div class="svc-img-tag"><strong>Alle typer montering</strong><span>Kjøkken · Garderobe · Kontor</span></div>
+      </div>
+      <div>
+        <div class="label reveal">Tjeneste 02</div>
+        <h2 class="section-title reveal">Montering</h2>
+        <p class="section-text reveal">Vi i Rogaland Driftsservice AS kan hjelpe deg med alt av montering til kjøkkenet, garderoben, stuen eller bedriften din – slik at du kan bruke tiden din på akkurat det du ønsker, eller om du føler det er best å la fagfolk stå for monteringen.</p>
+        <p class="section-text reveal">Våre montører arbeider effektivt, trygt og har lang erfaring. Vi monterer regelmessig for flere samarbeidspartnere og takler store oppdrag så vel som mindre. Vi setter deg i fokus og har et helhetsperspektiv på deg og dine ønsker.</p>
+        <p class="section-text reveal">Vi har lang erfaring innenfor monteringer på alt i fra kjøkken, garderobeinnredninger og kontormøblement, til større innredninger for industri og verksted.</p>
+        <a href="kontakt.html" class="btn btn-primary reveal">Be om tilbud</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 PROSJEKTLEDELSE -->
+<section class="svc-section" id="prosjektledelse">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <div class="label reveal">Tjeneste 03</div>
+        <h2 class="section-title reveal">Prosjekt&shy;ledelse</h2>
+        <p class="section-text reveal">Rogaland Driftsservice AS tilbyr prosjekteringstjenester innenfor bygg- og anleggsbransjen, til både det private og det profesjonelle markedet. Vi har gode samarbeidspartnere som vi har langvarige og etablerte forhold til og dette mener vi gir et styrket stykke arbeid til deg som kunde.</p>
+        <p class="section-text reveal">Vi har lang erfaring innenfor bransjen og ønsker å bruke denne erfaringen til å hjelpe deg som kunde.</p>
+        <p class="section-text reveal">Vårt mål er at du skal ha en person å forholde deg til igjennom hele prosjektet; en som sørger for at resultatet blir som du ønsker til prisen vi har avtalt. Løpende oppdateringer og gode innspill er viktig i hele prosessen, slik at du kan være trygg på at det blir slik som avtalt.</p>
+        <div class="blockquote reveal">
+          <p>Stikkord her er forutsigbarhet, kommunikasjon, kostnadskontroll og dokumentert kvalitet.</p>
+        </div>
+        <a href="kontakt.html" class="btn btn-primary reveal">Be om tilbud</a>
+      </div>
+      <div style="position:relative" class="reveal">
+        <img class="svc-img" src="assets/images/prosjektleder.jpeg" alt="Prosjektledelse">
+        <div class="svc-img-tag"><strong>Én kontaktperson</strong><span>Gjennom hele prosjektet</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="padding:5rem 0;background:var(--navy);text-align:center">
+  <div class="container">
+    <div class="label label--light reveal" style="justify-content:center">Trenger du hytteservice?</div>
+    <h2 style="font-family:var(--font-d);font-size:clamp(2rem,4vw,3rem);font-weight:700;text-transform:uppercase;color:var(--white);margin-bottom:1rem" class="reveal">Se vår <span style="color:var(--gold)">hytteservice</span></h2>
+    <p style="color:rgba(255,255,255,.55);margin-bottom:2rem;max-width:400px;margin-left:auto;margin-right:auto;font-size:.9rem" class="reveal">Felles for alle oppgaver og tjenester er at vi skal bidra til at du nyter feriedagene maksimalt.</p>
+    <a href="hytteservice.html" class="btn btn-primary reveal">Les om hytteservice</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div><img class="footer-logo" src="assets/images/1650882374564.jpeg" alt="Rogaland Driftsservice AS"><div class="footer-tagline">Vi vedlikeholder Rogaland</div><p class="footer-desc">Et godt rykte skapes av fornøyde kunder, fornøyde kunder skapes gjennom god service og godt utført arbeid. Trygghet for deg som kunde og at oppgaven blir ivaretatt på riktig måte. Avtalt arbeid til avtalt pris og tid.</p></div>
+      <div><div class="footer-nav-title">Tjenester</div><ul class="footer-nav-links"><li><a href="tjenester.html#vaktmester">Vaktmester &amp; Vedlikehold</a></li><li><a href="tjenester.html#montering">Montering</a></li><li><a href="tjenester.html#prosjektledelse">Prosjektledelse</a></li><li><a href="hytteservice.html">Hytteservice</a></li><li><a href="flaggstenger.html">Flaggstenger</a></li></ul></div>
+      <div><div class="footer-nav-title">Selskapet</div><ul class="footer-nav-links"><li><a href="om-oss.html">Om oss</a></li><li><a href="referanser.html">Referanser</a></li><li><a href="kontakt.html">Kontakt</a></li><li><a href="tel:48024024">48 024 024</a></li><li><a href="mailto:post@rogdrift.no">post@rogdrift.no</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© 2026 Rogaland Driftsservice AS · Org.nr. 813 933 632</p><p class="footer-pixora">Laget av <a href="https://rasmusostensen.github.io/Pixora/index.html" target="_blank" rel="noopener">Pixora</a></p></div>
+  </div>
+</footer>
+<script>
+  const lenis = new Lenis({ lerp:0.08 });
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.ticker.add(t => lenis.raf(t*1000));
+  gsap.ticker.lagSmoothing(0);
+  const navToggle = document.getElementById('navToggle');
+  const navMobile = document.getElementById('navMobile');
+  navToggle.addEventListener('click',()=>{navMobile.classList.add('open');navToggle.setAttribute('aria-expanded','true');});
+  document.getElementById('navClose').addEventListener('click',()=>{navMobile.classList.remove('open');navToggle.setAttribute('aria-expanded','false');});
+  navMobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navMobile.classList.remove('open')));
+  document.querySelectorAll('.reveal').forEach(el=>{
+    gsap.fromTo(el,{opacity:0,y:38},{opacity:1,y:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%',toggleActions:'play none none none'}});
+  });
+  // scroll to anchor on load
+  if(location.hash){setTimeout(()=>{const el=document.querySelector(location.hash);if(el)lenis.scrollTo(el,{offset:-100});},300);}
+</script>
+</body>
+</html>
