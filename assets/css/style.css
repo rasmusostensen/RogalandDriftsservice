@@ -87,7 +87,7 @@ a { text-decoration: none; color: inherit; }
 .btn-outline { background: transparent; color: var(--white); border: 1.5px solid rgba(255,255,255,.45); }
 .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,.08); }
 
-.reveal { opacity: 0; transform: translateY(35px); }
+.reveal { opacity: 1; transform: none; }
 
 /* ── NAVBAR ──────────────────────────────────── */
 .navbar {
