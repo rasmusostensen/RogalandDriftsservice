@@ -137,8 +137,17 @@
   navOverlay.addEventListener('click', closeMenu);
   navMobile.querySelectorAll('a').forEach(a=>a.addEventListener('click', closeMenu));
   document.querySelectorAll('.reveal').forEach(el=>{
-    gsap.fromTo(el,{opacity:0,y:38},{opacity:1,y:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%',toggleActions:'play none none none'}});
+    gsap.fromTo(el,{opacity:0,y:38},{opacity:1,y:0,duration:.6,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 95%',toggleActions:'play none none none'}});
   });
+
+  // Fallback: vis innhold hvis GSAP ikke laster
+  setTimeout(function(){
+    document.querySelectorAll('.reveal').forEach(function(el){
+      el.style.opacity='1';
+      el.style.transform='none';
+      el.style.transition='opacity .6s, transform .6s';
+    });
+  }, 800);
 </script>
 </body>
 </html>
