@@ -559,7 +559,7 @@ a { text-decoration: none; color: inherit; }
   .img-stack { height: 420px; }
   .footer-top { grid-template-columns: 1fr 1fr; }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav-links, .nav-cta { display: none; }
   .nav-toggle { display: flex; }
   .form-row-2 { grid-template-columns: 1fr; }
